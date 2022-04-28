@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+main{
+    width: 100vw;
+    height: auto;
+}
+nav li{
+    background-color: white;
+    list-style: none;
+    padding: 0.3rem 1rem;
+    display: block;
+    color: hsl(0, 0%, 41%);
+}
+nav ul{
+    position: absolute;
+    margin-top: 1rem;
+    box-shadow: 0px 0px 15px #dedede;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    display: none;
+}
+.navbar-btn:hover{
+    color: black;
+}
+.navbar-btn:hover > ul{
+    display: block;
+}
+.menu-icon{
+    display: none;
+}
+.fst{
+    position: absolute;
+   
+    left: 7rem;
+}
+svg{
+    margin-right: 0.8rem;
+}
+.container{
+    padding: 20px 40px;
+}
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding-top: 10px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-left{
+    display: flex;
+    padding: 0px 40px;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+.navbar-btn{
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.arrow{
+    margin-left: 5px;
+}
+.register{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 41%);
+    padding: 12px 20px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    border-radius: 15px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.register:hover{
+    color: black;
+    border: 2px solid black;
+}
+.content-wrapper{
+    display: flex;
+    padding: 60px 90px 30px 90px;
+    justify-content: space-between;
+}
+.content{
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  40px;
+    margin-top: 60px;
+}
+.close{
+    display: none;
+}
+.text{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 50px auto;
+    padding-right: 200px;
+}
+.banner{
+    width: 40%;
+    background-image:url(/images/image-hero-desktop.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.moblie{
+    display: none;
+}
+h1{
+    font-size: 80px;
+    padding-right: 100px;
+}
+.learnmore{
+    display: flex;
+    width: 160px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.learnmore:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+.companypicture{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 160px;
+    margin-top: 110px;
+ 
+}
+
+@media screen and (max-width: 800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+        
+    }
+    nav ul{
+        position: relative;
+        margin-top: 1rem;
+        box-shadow: none;
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.5rem;
+        display: none;
+    }
+    .fst{
+        position: relative;
+        margin-top: 0.5rem;
+        box-shadow: none;
+        padding: 1rem 0.5rem;
+        border-radius: 0.5rem;
+        left: 0;
+    }
+    nav li{
+        padding: 0.7rem 1rem;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        top: 20;
+        right: 0;
+    }
+
+    .navbar{
+        width: 200px;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        right: 0;
+        top:0px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        justify-content: unset;
+        transition: all 0.5s;
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .navbar-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-left{
+        width: 100%;
+        padding: 15px ;
+        
+    }
+    .navbar-btn{
+        padding: 10px 0;
+    }
+    .register{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .container{
+        padding: 0;
+        overflow: hidden;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .header-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .navbar-left{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        background-image:none;
+    }
+    .moblie{
+        display: block;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .content-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:  10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    h1{
+        font-size: 37px;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .text{
+        font-size: 18px;
+        color: hsl(0, 0%, 41%);
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin: 25px auto ;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .companypicture{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0px;
+        margin-top: 50px;
+        padding: 10px 20px;
+    }
+}
